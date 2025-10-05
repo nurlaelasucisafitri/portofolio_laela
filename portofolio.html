@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | [Nur Laela Suci Safitri]</title>
+</head>
+<style>
+:root {
+--primary: #06b6d4;
+--secondary: #0f172a;
+--bg: #f9fafb;
+--text: #1e293b;
+}
+@media (prefers-color-scheme: dark) {
+:root {
+--bg: #0f172a;
+--text: #f1f5f9;
+--secondary: #1e293b;
+}
+}
+body {
+font-family: "Inter", sans-serif;
+margin: 0;
+padding: 0;
+background-color: var(--bg);
+color: var(--text);
+line-height: 1.6;
+}
+header {
+background: linear-gradient(135deg, var(--primary), #3b82f6);
+color: white;
+padding: 2rem 1rem;
+text-align: center;
+
+position: sticky;
+top: 0;
+z-index: 50;
+}
+header h1 {
+margin: 0 0 1rem 0;
+font-size: 1.8rem;
+}
+nav ul {
+list-style: none;
+padding: 0;
+display: flex;
+justify-content: center;
+gap: 1.5rem;
+flex-wrap: wrap;
+margin: 0;
+}
+nav a {
+color: white;
+text-decoration: none;
+font-weight: 600;
+transition: color 0.3s ease;
+}
+nav a:hover {
+color: #facc15;
+}
+main {
+max-width: 1100px;
+margin: 2rem auto;
+padding: 1rem;
+}
+section {
+margin-bottom: 4rem;
+}
+h2 {
+margin-bottom: 1rem;
+font-size: 1.6rem;
+color: var(--primary);
+}
+/* Hero */
+#hero {
+text-align: center;
+
+}
+#hero img {
+max-width: 100%;
+border-radius: 1rem;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+#hero figcaption {
+margin-top: 1rem;
+font-style: italic;
+}
+/* Tentang */
+#tentang p {
+margin-bottom: 1rem;
+}
+aside {
+background-color: var(--secondary);
+color: white;
+padding: 1rem;
+border-radius: 0.75rem;
+margin-top: 1.5rem;
+}
+/* Proyek */
+.project-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 1.5rem;
+}
+.project-item {
+background: white;
+border-radius: 0.75rem;
+padding: 1.2rem;
+text-align: center;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+@media (prefers-color-scheme: dark) {
+.project-item {
+background: #1e293b;
+}
+}
+.project-item:hover {
+transform: translateY(-6px);
+
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.project-item img {
+max-width: 100%;
+border-radius: 0.5rem;
+margin-bottom: 1rem;
+}
+/* Kontak */
+address {
+font-style: normal;
+background: var(--secondary);
+color: white;
+padding: 1rem;
+border-radius: 0.75rem;
+}
+address a {
+color: #facc15;
+text-decoration: none;
+}
+/* Footer */
+footer {
+text-align: center;
+padding: 1.5rem;
+background-color: var(--secondary);
+color: white;
+margin-top: 2rem;
+}
+footer nav {
+margin-top: 0.5rem;
+}
+footer a {
+color: var(--primary);
+text-decoration: none;
+}
+</style>
+<body>
+    <header>
+        <h1>Nur Laela Suci Safitri - Junior Web Developer</h1>
+        <nav>
+            <ul>
+                <li><a href="#tentang">Tentang Saya</a></li>
+                <li><a href="#proyek">Project</a></li>
+                <li><a href="#kontak">Kontak</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <figure>
+                <img src="img/saya.jpg" alt="Foto Nur Laela Suci Safitri" width="200"/>
+                <figcaption>
+                    Selamat datang! Saya adalah mahasiswa Pemrograman Web 1 yang
+                    bersemangat.
+                </figcaption>
+            </figure>
+        </section>
+
+        <section id="tentang">
+            <article>
+                <h2>Tentang saya</h2>
+                <p>
+                    Halo nama saya Nur Laela Suci Safitri, saya seorang web developer yang bersemangat tentang menciptakan
+                    pengalaman web yang menarik dan fungsional. saya memiliki keahlian dalam desain responsif, 
+                    pengelolaan Git version control dasar, serta pemahaman mengenai pembuatan tampilan web yang sederhana namun menarik. 
+                    Selain itu, saya juga selalu bersemangat untuk mempelajari teknologi baru demi meningkatkan kemampuan saya sebagai seorang web developer.
+                </p>
+
+        <section id="proyek">
+                <h2>Project</h2>
+                <div class="project-grid">
+                <article class="project-item">
+                <h3>Alat Pengukur Suhu Ruangan Otomatis Menggunakan Arduino</h3>
+                <img
+                    src="img/projek1.jpg"
+                    alt="Alat Pengukur Suhu Ruangan Otomatis Menggunakan Arduino"
+                    width="300"
+                    height="200"
+                    loading="lazy"
+                />
+                <p>
+                    Alat ini dibuat menggunakan Arduino dan sensor suhu untuk mengukur suhu ruangan secara otomatis,
+                    lalu menampilkannya pada layar.
+                </p>
+                </article>
+                <article class="project-item">
+                <h3>Tong Sampah Otomatis Menggunakan Arduino</h3>
+                <img
+                    src="img/tongsampah.jpeg"
+                    alt="Tong Sampah Terbuka Otomatis Menggunakan Arduino"
+                    width="300"
+                    height="200"
+                    loading="lazy"
+                />
+                <p>
+                    Tong sampah ini menggunakan Arduino dan sensor ultrasonik yang dapat membuka 
+                    serta menutup tutup secara otomatis saat mendeteksi tangan atau benda di depannya.
+                </p>
+
+                </article>
+                    <article class="project-item">
+                    <h3>Toko Online Berbasis Web dengan Desain Responsif</h3>
+                
+                <img
+                    src="img/projek3.jpg"
+                    alt="Landing page modern"
+                    width="300"
+                    height="200"
+                    loading="lazy"
+                />
+                </picture>
+                <p>
+                    Aplikasi ini merupakan simulasi toko online berbasis web dengan desain responsif, 
+                    memanfaatkan HTML, CSS, dan JavaScript untuk menampilkan produk dengan tata letak menarik.
+                </p>
+        </article>
+    </div>
+</section>
+        <section id="kontak">
+            <h2>Hubungi Saya</h2>
+            <address>
+                Email:
+                <a href="mailto:nurlaelasucisafitri@gmail.com">nurlaelasucisafitri@gmail.com</a><br/>
+                Linkedin:
+                <a href="https://www.linkedin.com/in/nur-laela-suci-safitri-879a51339/">Nur Laela Suci Safitri</a>
+            </address>
+        </article>
+    </section>
+    </main>
+<footer>
+        <p>
+        <time datetime="2025-10-01">2025</time> &copy; Nur Laela Suci Safitri. Hak Cipta Dilindungi.
+        </p>
+    <nav>
+        <a href="#hero">⬆ Kembali ke Atas</a>
+    </nav>
+</footer>
+</body>
+</html>
